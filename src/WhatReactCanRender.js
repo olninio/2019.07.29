@@ -37,6 +37,16 @@ const WhatReactCanRender = () => (
     {/* {obj2} */}
     <p>Can display object props if they arent objects</p>
     {obj2.name}
+    <p>Displays all array elements!</p>
+    {arr1}
+    {numbers}
+    {names}
+    <p>Array with objects are the same as displaying objects (with error - uncomment to see ;)):</p>
+    {/* {objects} */}
+    <p>Not displays functions (with warning)</p>
+    {hello}
+    <p>Can display function calls</p>
+    {hello()}
   </div>
 )
 

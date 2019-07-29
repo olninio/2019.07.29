@@ -16,6 +16,7 @@ const App = () => {
     {
       people.map(person => (
         <DisplayName
+          key={person.name+person.lastName}
           name = {person.name}
           lastName = {person.lastName}
         />

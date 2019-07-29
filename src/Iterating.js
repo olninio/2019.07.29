@@ -24,15 +24,15 @@ const Iterating = (props) => (
     }
     <br />
     {
-      names.map(name => React.createElement('p', {}, name))
+      names.map(name => React.createElement('p', {key:name}, name))
     }
     {
-      names.map(name => <p>{name}</p>)
+      names.map(name => <p key={name}>{name}</p>)
     }
     <br />
     <ul>
       {
-        names.map(name => <li>{name}</li>)
+        names.map(name => <li key={name}>{name}</li>)
       }
     </ul>
   </div>

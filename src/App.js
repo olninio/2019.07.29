@@ -3,11 +3,25 @@ import WhatReactCanRender from './WhatReactCanRender'
 import Iterating from './Iterating'
 import DisplayName from './DisplayName'
 
+
+const people = [
+  { name: 'Ala', lastName: 'Kotowicz'},
+  { name: 'Ala', lastName: '2'},
+  { name: 'Ala', lastName: '3'},
+]
+
+
 const App = () => {
   return <div>
-    <DisplayName name={'Ala'} lastName = {'Kotowicz'}/>
-    <DisplayName name={'Ola'} lastName = {'Lisiewicz'}/>
-    <DisplayName name={'Ela'} lastName = {'Borsukowicz'}/>
+    {
+      people.map(person => (
+        <DisplayName
+          name = {person.name}
+          lastName = {person.lastName}
+        />
+      ))
+    }
+    
     <br />
     <Iterating />
     <hr />

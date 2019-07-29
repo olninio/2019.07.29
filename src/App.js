@@ -5,9 +5,9 @@ import DisplayName from './DisplayName'
 
 const App = () => {
   return <div>
-    <DisplayName name={'Ala'}/>
-    <DisplayName name={'Ola'}/>
-    <DisplayName name={'Ela'}/>
+    <DisplayName name={'Ala'} lastName = {'Kotowicz'}/>
+    <DisplayName name={'Ola'} lastName = {'Lisiewicz'}/>
+    <DisplayName name={'Ela'} lastName = {'Borsukowicz'}/>
     <br />
     <Iterating />
     <hr />

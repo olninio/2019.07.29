@@ -6,7 +6,7 @@ const styles = {
 
 const DisplayName = (props) => (
   <div style={styles.div}>
-    {props.name}
+    {props.name} {props.lastName}
   </div>
 )
 

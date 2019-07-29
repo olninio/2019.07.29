@@ -32,6 +32,11 @@ const WhatReactCanRender = () => (
     {nullVar}
     <p>CANT render unndefined (without error - renders nothing):</p>
     {undef}
+    <p>CANT render objects (with error - uncomment to see ;)):</p>
+    {/* {obj1} */}
+    {/* {obj2} */}
+    <p>Can display object props if they arent objects</p>
+    {obj2.name}
   </div>
 )
 

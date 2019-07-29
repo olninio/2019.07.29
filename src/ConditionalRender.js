@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 const ConditionalRender = (props) => (
   props.display === true ?
   <div>
@@ -7,5 +9,9 @@ const ConditionalRender = (props) => (
   :
   null
 )
+
+ConditionalRender.propTypes = {
+  display: PropTypes.bool
+}
 
 export default ConditionalRender

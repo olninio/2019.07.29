@@ -1,7 +1,11 @@
 import React from 'react'
 
+const styles = {
+  div:  { color: 'red', backgroundColor: 'green' }
+}
+
 const DisplayName = () => (
-  <div style={{ color: 'red', backgroundColor: 'green' }}>
+  <div style={styles.div}>
     Mateusz
   </div>
 )

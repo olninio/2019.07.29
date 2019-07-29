@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+const Hello = () => <h1>Hello</h1>
+
 ReactDOM.render(
-  <h1>Hello</h1>,
+  <Hello />,
   document.querySelector('#root')
 )

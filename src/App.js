@@ -2,6 +2,7 @@ import React from 'react'
 import WhatReactCanRender from './WhatReactCanRender'
 import Iterating from './Iterating'
 import DisplayName from './DisplayName'
+import ConditionalRender from './ConditionalRender'
 
 
 const people = [
@@ -13,6 +14,10 @@ const people = [
 
 const App = () => {
   return <div>
+    <ConditionalRender display={true} />
+    <ConditionalRender display={false} />
+    <ConditionalRender />
+    <hr/>
     {
       people.map(person => (
         <DisplayName
@@ -23,7 +28,7 @@ const App = () => {
       ))
     }
     
-    <br />
+    <hr />
     <Iterating />
     <hr />
     <WhatReactCanRender />

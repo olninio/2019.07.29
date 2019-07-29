@@ -5,7 +5,9 @@ import DisplayName from './DisplayName'
 
 const App = () => {
   return <div>
-    <DisplayName />
+    <DisplayName name={'Ala'}/>
+    <DisplayName name={'Ola'}/>
+    <DisplayName name={'Ela'}/>
     <br />
     <Iterating />
     <hr />

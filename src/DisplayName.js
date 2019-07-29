@@ -4,9 +4,9 @@ const styles = {
   div:  { color: 'red', backgroundColor: 'green' }
 }
 
-const DisplayName = () => (
+const DisplayName = (props) => (
   <div style={styles.div}>
-    Mateusz
+    {props.name}
   </div>
 )
 

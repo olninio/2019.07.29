@@ -26,6 +26,12 @@ const WhatReactCanRender = () => (
     {number}
     <p>Can render strings:</p>
     {string}
+    <p>CANT render bool (without error - renders nothing):</p>
+    {bool}
+    <p>CANT render null (without error - renders nothing):</p>
+    {nullVar}
+    <p>CANT render unndefined (without error - renders nothing):</p>
+    {undef}
   </div>
 )
 

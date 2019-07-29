@@ -1,6 +1,6 @@
 import React from 'react'
 
-const number = 1
+const number = 12
 const string = 'cokolwiek'
 const bool = true
 const nullVar = null
@@ -22,7 +22,10 @@ const hello = () => 'Hello'
 
 const WhatReactCanRender = () => (
   <div>
-
+    <p>Can render numbers:</p>
+    {number}
+    <p>Can render strings:</p>
+    {string}
   </div>
 )
 

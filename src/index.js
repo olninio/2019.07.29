@@ -1,15 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-const Hello = () =>  <h1>Hello</h1>
-const hello = <h1>Hello</h1>
-
-console.log(Hello)
-console.log(hello)
-console.log(Hello())
-console.log(<Hello />)
+import App from './App'
 
 ReactDOM.render(
-  <Hello />,
+  <App />,
   document.querySelector('#root')
 )
